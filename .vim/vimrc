@@ -10,20 +10,20 @@ set shell=/bin/sh
    call vundle#begin()
 
    " let Vundle manage Vundle, required
-   Plugin 'gmarik/Vundle.vim'
+   "Plugin 'gmarik/Vundle.vim'
 
-   " plugins on GitHub
-   Plugin 'Lokaltog/vim-easymotion'
-   Plugin 'milkypostman/vim-togglelist'
-   Plugin 'vim-scripts/The-NERD-Tree'
-   Plugin 'vim-scripts/The-NERD-Commenter'
+   "" plugins on GitHub
+   "Plugin 'Lokaltog/vim-easymotion'
+   "Plugin 'milkypostman/vim-togglelist'
+   "Plugin 'vim-scripts/The-NERD-Tree'
+   "Plugin 'vim-scripts/The-NERD-Commenter'
 
-   " plugins from http://vim-scripts.org/vim/scripts.html
-   Bundle 'L9'
-   Bundle 'FuzzyFinder'
-   Bundle 'bufkill.vim'
-   Bundle 'bufferlist.vim'
-   Bundle 'grep.vim'
+   "" plugins from http://vim-scripts.org/vim/scripts.html
+   "Bundle 'L9'
+   "Bundle 'FuzzyFinder'
+   "Bundle 'bufkill.vim'
+   "Bundle 'bufferlist.vim'
+   "Bundle 'grep.vim'
 
    call vundle#end()            " required
    filetype plugin indent on    " required
