@@ -5,44 +5,38 @@ set shell=/bin/sh
 " =======================================================================
    filetype off                   " required!
 
-   let g:vundle_default_git_proto = 'git'
-   set rtp+=~/.vim/bundle/vundle/
-   call vundle#rc()
+   set rtp+=~/.vim/bundle/Vundle.vim/
 
-   " let Vundle manage Vundle
-   " required!
-   Bundle 'gmarik/vundle'
+   call vundle#begin()
 
-   " My Bundles here:
-   "
-   " original repos on github
-   Bundle 'Lokaltog/vim-easymotion'
-   "Bundle 'Lokaltog/powerline'
-   Bundle 'milkypostman/vim-togglelist'
-   Bundle 'vim-scripts/The-NERD-Tree'
-   Bundle 'vim-scripts/The-NERD-Commenter'
-   " vim-scripts repos
+   " let Vundle manage Vundle, required
+   Plugin 'gmarik/Vundle.vim'
+
+   " plugins on GitHub
+   Plugin 'Lokaltog/vim-easymotion'
+   Plugin 'milkypostman/vim-togglelist'
+   Plugin 'vim-scripts/The-NERD-Tree'
+   Plugin 'vim-scripts/The-NERD-Commenter'
+
+   " plugins from http://vim-scripts.org/vim/scripts.html
    Bundle 'L9'
    Bundle 'FuzzyFinder'
    Bundle 'bufkill.vim'
    Bundle 'bufferlist.vim'
    Bundle 'grep.vim'
-   " non github repos
-   "Bundle 'git://git.wincent.com/command-t.git'
-   " git repos on your local machine (ie. when working on your own plugin)
-   "Bundle 'file:///Users/gmarik/path/to/plugin'
-   " ...
 
-   filetype plugin indent on     " required!
+   call vundle#end()            " required
+   filetype plugin indent on    " required
+   " To ignore plugin indent changes, instead use:
+   " filetype plugin on
    "
    " Brief help
-   " :BundleList          - list configured bundles
-   " :BundleInstall(!)    - install(update) bundles
-   " :BundleSearch(!) foo - search(or refresh cache first) for foo
-   " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+   " :PluginList       - lists configured plugins
+   " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+   " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+   " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
    "
    " see :h vundle for more details or wiki for FAQ
-   " NOTE: comments after Bundle command are not allowed..
 " =======================================================================
 
 " From vimrc_example
