@@ -1,0 +1,9 @@
+*
+!/.gitignore.d
+!/.gitignore.d/vim
+!/.gitmodules
+!/.vim
+!/.vim/bundle
+!/.vim/bundle/vundle
+!/.vimrc
+!/.vim/vimrc
