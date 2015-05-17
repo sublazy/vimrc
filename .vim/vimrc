@@ -8,17 +8,17 @@ set shell=/bin/sh
    call vundle#begin()
 
    "" plugins on GitHub
-   "Plugin 'Lokaltog/vim-easymotion'
-   "Plugin 'milkypostman/vim-togglelist'
-   "Plugin 'vim-scripts/The-NERD-Tree'
-   "Plugin 'vim-scripts/The-NERD-Commenter'
+   Plugin 'Lokaltog/vim-easymotion'
+   Plugin 'milkypostman/vim-togglelist'
+   Plugin 'vim-scripts/The-NERD-Tree'
+   Plugin 'vim-scripts/The-NERD-Commenter'
 
    "" plugins from http://vim-scripts.org/vim/scripts.html
-   "Bundle 'L9'
-   "Bundle 'FuzzyFinder'
-   "Bundle 'bufkill.vim'
-   "Bundle 'bufferlist.vim'
-   "Bundle 'grep.vim'
+   Bundle 'L9'
+   Bundle 'FuzzyFinder'
+   Bundle 'bufkill.vim'
+   Bundle 'bufferlist.vim'
+   Bundle 'grep.vim'
 
    call vundle#end()            " required
    filetype plugin indent on    " required
