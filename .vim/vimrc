@@ -164,7 +164,7 @@ if has("autocmd")
 endif
 
 " Open command line without Shift key.
-nnoremap ; :
+nnoremap <SPACE> :
 
 " Stay on searched word
 nnoremap * *N
