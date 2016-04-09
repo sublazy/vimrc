@@ -154,6 +154,8 @@ set cpoptions+=n        " start soft-wrap lines (and any prefix) in the line-num
 set nobackup
 set noswapfile
 
+set ignorecase
+set smartcase
 
 " Source the vimrc file after saving it
 if has("autocmd")
@@ -164,7 +166,7 @@ if has("autocmd")
 endif
 
 " Open command line without Shift key.
-nnoremap <SPACE> :
+nnoremap ; :
 
 " Stay on searched word
 nnoremap * *N
@@ -174,9 +176,10 @@ let mapleader = ","
 nmap <leader>v :split $MYVIMRC<CR>
 nmap <leader>fi :set formatoptions+=a<CR>
 nmap <leader>fo :set formatoptions-=a<CR>
-nmap <leader>s :w!<CR>
 nmap <leader>q :q!<CR>
 nmap <leader>x :x<CR>
+
+nmap <SPACE>fs :w!<CR>
 
 " FuzzyFinder shortcuts
 nmap <leader>ff :FufFile<CR>
@@ -210,8 +213,8 @@ nmap <silent> <F2> :call ToggleQuickfixList()<CR>
 nmap <silent> <leader>l :call ToggleLocationList()<CR>
 
 " Moving in quickfix window
-nnoremap <silent> <F6> :cp<CR>
-nnoremap <silent> <F7> :cn<CR>
+nnoremap <silent> <F5> :cp<CR>
+nnoremap <silent> <F6> :cn<CR>
 
 " Bubble single lines
 nmap <C-Up> ddkP
@@ -219,9 +222,6 @@ nmap <C-Down> ddp
 " Bubble multiple lines
 vmap <C-Up> xkP'[V']
 vmap <C-Down> xp'[V']
-
-" Underline a header with '=' characters.
-nmap <F5> yypVr=
 
 " Go from a function body to its name (go name)
 nmap gn [[kf(b
