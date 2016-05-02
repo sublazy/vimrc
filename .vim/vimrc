@@ -112,7 +112,7 @@ set softtabstop=4
 set expandtab		" Convert tabs to spaces.
 "
 
-"syntax enable
+syntax enable
 "let g:solarized_termcolors=256
 "set t_Co=256	" Terminal colors
 set background=dark
