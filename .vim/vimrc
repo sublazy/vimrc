@@ -107,10 +107,11 @@ set linebreak
 
 set formatoptions=tcq1
 
-set shiftwidth=4
+set noexpandtab        " don't convert tabs to spaces.
+set smarttab
+set tabstop=4
 set softtabstop=4
-set expandtab		" Convert tabs to spaces.
-"
+set shiftwidth=4
 
 syntax enable
 "let g:solarized_termcolors=256
