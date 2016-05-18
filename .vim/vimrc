@@ -11,6 +11,8 @@ set shell=/bin/sh
    Plugin 'Lokaltog/vim-easymotion'
    Plugin 'milkypostman/vim-togglelist'
    Plugin 'vim-scripts/The-NERD-Commenter'
+   Plugin 'sublazy/vim-zmq-coding-style'
+   let g:zmqsty_patterns = []
 
    "" plugins from http://vim-scripts.org/vim/scripts.html
    Bundle 'L9'
