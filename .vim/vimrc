@@ -215,6 +215,8 @@ let g:toggle_list_no_mappings = 1
 nmap <silent> <F2> :call ToggleQuickfixList()<CR>
 nmap <silent> <leader>l :call ToggleLocationList()<CR>
 
+inoremap <silent> <F1> <esc>
+
 " Moving in quickfix window
 nnoremap <silent> <F5> :cp<CR>
 nnoremap <silent> <F6> :cn<CR>
